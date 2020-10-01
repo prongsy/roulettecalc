@@ -1,35 +1,32 @@
 <DOCTYPE! HTML>
   <html>
-    <link rel="stylesheet" href="roulettecss.css">
+    <link rel="stylesheet" href="style.css">
     <head>
       <h1>ROULETTE CALCULATOR</h1>
 
     </head>
     <body>
-     <script src="roulettecode.js"></script>
+     <script src="roulettejscalc.js"></script>
+     
      <!--added min max values and made it impossible to enter negative numbers-->
-    Straight: <input oninput="this.value = 
-    !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" min="0" max="99" class="straight" type="number" id="num1">
+      <!--added onkeypress to stop adding in the negative symbol or eE-->
+
+    Straight: <input onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57" min="0" max="99" class="straight" type="number" id="num1">
     <br>
     <br>
-    Split: <input oninput="this.value = 
-    !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" min="0" max="99" class="split" type="number" id="num2"> 
+    Split: <input onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57" min="0" max="99" class="split" type="number" id="num2"> 
     <br>
     <br>
-    Corner: <input oninput="this.value = 
-    !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" min="0" max="99" class="corner" type="number" id="num3"> 
+    Corner: <input onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57" min="0" max="99" class="corner" type="number" id="num3"> 
     <br>
     <br>
-    Street: <input oninput="this.value = 
-    !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" min="0" max="99" class="street" type="number" id="num4">
+    Street: <input onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57" min="0" max="99" class="street" type="number" id="num4">
     <br>
     <br>
-    Double Street: <input oninput="this.value = 
-    !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" min="0" max="99" class="dstreet" type="number" id="num5">
+    Double Street: <input onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57" min="0" max="99" class="dstreet" type="number" id="num5">
     <br>
     <br>
-    Basket: <input oninput="this.value = 
-    !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" min="0" max="99" class="basket" type="number" id="num6">
+    Basket: <input onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57" min="0" max="99" class="basket" type="number" id="num6">
     <br>
     <br>
     <button onclick="calculate()">Calculate</button>

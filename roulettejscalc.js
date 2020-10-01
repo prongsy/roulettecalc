@@ -52,34 +52,34 @@ function calculate() {
 };
 
 //added input limiter so large numbers don't break the result
-
+//changed the limit to 2 making the max input 99
 num1.oninput = function () {
-    if (this.value.length > 3) {
-        this.value = this.value.slice(0,3); 
+    if (this.value.length > 2) {
+        this.value = this.value.slice(0,2); 
     }
 };
 num2.oninput = function () {
-    if (this.value.length > 3) {
-        this.value = this.value.slice(0,3); 
+    if (this.value.length > 2) {
+        this.value = this.value.slice(0,2); 
     }
 };
 num3.oninput = function () {
-    if (this.value.length > 3) {
-        this.value = this.value.slice(0,3); 
+    if (this.value.length > 2) {
+        this.value = this.value.slice(0,2); 
     }
 };
 num4.oninput = function () {
-    if (this.value.length > 3) {
-        this.value = this.value.slice(0,3); 
+    if (this.value.length > 2) {
+        this.value = this.value.slice(0,2); 
     }
 };
 num5.oninput = function () {
-    if (this.value.length > 3) {
-        this.value = this.value.slice(0,3); 
+    if (this.value.length > 2) {
+        this.value = this.value.slice(0,2); 
     }
 };
 num6.oninput = function () {
-    if (this.value.length > 3) {
-        this.value = this.value.slice(0,3); 
+    if (this.value.length > 2) {
+        this.value = this.value.slice(0,2); 
     }
 };

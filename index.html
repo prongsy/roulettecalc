@@ -7,23 +7,29 @@
     </head>
     <body>
      <script src="roulettecode.js"></script>
-     
-    Straight: <input class="straight" type="number" id="num1">
+     <!--added min max values and made it impossible to enter negative numbers-->
+    Straight: <input oninput="this.value = 
+    !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" min="0" max="100" class="straight" type="number" id="num1">
     <br>
     <br>
-    Split: <input class="split" type="number" id="num2"> 
+    Split: <input oninput="this.value = 
+    !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" min="0" max="100" class="split" type="number" id="num2"> 
     <br>
     <br>
-    Corner: <input class="corner" type="number" id="num3"> 
+    Corner: <input oninput="this.value = 
+    !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" min="0" max="100" class="corner" type="number" id="num3"> 
     <br>
     <br>
-    Street: <input class="street" type="number" id="num4">
+    Street: <input oninput="this.value = 
+    !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" min="0" max="100" class="street" type="number" id="num4">
     <br>
     <br>
-    Double Street: <input class="dstreet" type="number" id="num5">
+    Double Street: <input oninput="this.value = 
+    !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" min="0" max="100" class="dstreet" type="number" id="num5">
     <br>
     <br>
-    Basket: <input class="basket" type="number" id="num6">
+    Basket: <input oninput="this.value = 
+    !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" min="0" max="100" class="basket" type="number" id="num6">
     <br>
     <br>
     <button onclick="calculate()">Calculate</button>

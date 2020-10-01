@@ -50,3 +50,36 @@ function calculate() {
     let value = val1() + val2() + val3() + val4() + val5() + val6();
     document.getElementById("output").innerHTML = value;
 };
+
+//added input limiter so large numbers don't break the result
+
+num1.oninput = function () {
+    if (this.value.length > 3) {
+        this.value = this.value.slice(0,3); 
+    }
+};
+num2.oninput = function () {
+    if (this.value.length > 3) {
+        this.value = this.value.slice(0,3); 
+    }
+};
+num3.oninput = function () {
+    if (this.value.length > 3) {
+        this.value = this.value.slice(0,3); 
+    }
+};
+num4.oninput = function () {
+    if (this.value.length > 3) {
+        this.value = this.value.slice(0,3); 
+    }
+};
+num5.oninput = function () {
+    if (this.value.length > 3) {
+        this.value = this.value.slice(0,3); 
+    }
+};
+num6.oninput = function () {
+    if (this.value.length > 3) {
+        this.value = this.value.slice(0,3); 
+    }
+};

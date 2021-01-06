@@ -1,7 +1,7 @@
 let val1 = function straight() {
     var num1 = parseInt(document.getElementById("num1").value);
     if (num1 >= 1) {
-        return num1 + 35 * num1;
+        return 35 * num1;
     } else {
         return 0;
     }
@@ -9,7 +9,7 @@ let val1 = function straight() {
 let val2 = function split() {
     var num2 = parseInt(document.getElementById("num2").value);
     if (num2 >= 1) {
-        return num2 + 17 * num2;
+        return 17 * num2;
     } else {
         return 0;
     }
@@ -17,31 +17,31 @@ let val2 = function split() {
 let val3 = function corner() {
     var num3 = parseInt(document.getElementById("num3").value);
     if (num3 >= 1) {
-        return num3 + 8 * num3;
+        return 8 * num3;
     } else {
         return 0;
     }
 };
 let val4 = function street() {
-    var num3 = parseInt(document.getElementById("num4").value);
-    if (num3 >= 1) {
-        return num3 + 11 * num3;
+    var num4 = parseInt(document.getElementById("num4").value);
+    if (num4 >= 1) {
+        return 11 * num4;
     } else {
         return 0;
     }
 };
 let val5 = function dstreet() {
-    var num3 = parseInt(document.getElementById("num5").value);
-    if (num3 >= 1) {
-        return num3 + 5 * num3;
+    var num5 = parseInt(document.getElementById("num5").value);
+    if (num5 >= 1) {
+        return 5 * num5;
     } else {
         return 0;
     }
 };
 let val6 = function basket() {
-    var num3 = parseInt(document.getElementById("num6").value);
-    if (num3 >= 1) {
-        return num3 + 6 * num3;
+    var num6 = parseInt(document.getElementById("num6").value);
+    if (num6 >= 1) {
+        return 6 * num6;
     } else {
         return 0;
     }
@@ -50,9 +50,18 @@ function calculate() {
     let value = val1() + val2() + val3() + val4() + val5() + val6();
     document.getElementById("output").innerHTML = value;
 };
+function includeOgBet() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        var num3 = parseInt(document.getElementById("num3").value);
+        var num4 = parseInt(document.getElementById("num4").value);
+        var num5 = parseInt(document.getElementById("num5").value);
+        var num6 = parseInt(document.getElementById("num6").value);
+        let value1 = val1() + val2() + val3() + val4() + val5() + val6();
+        let value = value1 + (num1 || 0) + (num2 || 0) + (num3 || 0) + (num4 || 0) + (num5 || 0) + (num6 || 0);
+        document.getElementById("outputOG").innerHTML = value;
+}
 
-//added input limiter so large numbers don't break the result
-//changed the limit to 2 making the max input 99
 num1.oninput = function () {
     if (this.value.length > 2) {
         this.value = this.value.slice(0,2); 

@@ -1,0 +1,83 @@
+body {
+    background: black;
+    color: white;
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  
+  .inputs {
+    margin: auto;
+    width: 4%;
+    border: 10px green;
+    padding: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  #output {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  #outputOG {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 20px 0 rgba(248, 248, 248, 0.288);
+    transition: 0.3s;
+    background-color: rgb(192, 41, 41);
+    color: rgb(2, 2, 2);
+    font-weight: bold;
+    font-size: 20px;
+    width: auto;
+    float: left;
+    
+  }
+
+  .card2 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 20px 0 rgba(248, 248, 248, 0.288);
+    transition: 0.3s;
+    background-color: rgb(48, 124, 33);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    float: right;
+    
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(22, 161, 33, 0.2);
+  }
+  /* On mouse-over, add a deeper shadow */
+  .card2:hover {
+    box-shadow: 0 8px 16px 0 rgba(22, 161, 33, 0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding-left: 12%;
+    padding-top: 0.5%;
+  }
+
+  /* Add some padding inside the card container */
+  .container2 {
+    padding-left: 12%;
+    padding-top: 0.5%;
+  }
+
+  .img {
+    
+    width: 60%;
+    height: auto;
+  }
